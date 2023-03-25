@@ -1,0 +1,24 @@
+---
+import CountDown from "./components/CountDown";
+---
+
+<section class="relative bg-[url('/assets/hero.png')] bg-cover h-full">
+  <div class="flex flex-col h-full justify-center gap-6 px-12 py-16 sm:py-24">
+    <h1 class="text-4xl sm:text-5xl font-display">
+      CU Intania<br />Open House<br />2023
+    </h1>
+
+    <div class="flex flex-col gap-3 font-display">
+      <div class="flex items-center gap-4">
+        <img src="/assets/icons/calendar.svg" alt="calendar" />
+        <span>1 - 2 April 2023</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <img src="/assets/icons/pin.svg" alt="pin" />
+        <span>Faculty of Engineering, Chulalongkorn University</span>
+      </div>
+    </div>
+
+    <CountDown client:load />
+  </div>
+</section>
