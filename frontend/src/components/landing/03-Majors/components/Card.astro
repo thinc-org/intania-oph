@@ -1,0 +1,17 @@
+---
+const { nameTH, nameEN, id } = Astro.props;
+---
+
+<a
+  href={`/major/${id}`}
+  class="rounded-3xl bg-space-normal/30 backdrop-blur-md transition-colors duration-500 hover:bg-space-normal/10"
+>
+  <div class="flex flex-col items-center justify-center gap-2 px-2 py-10">
+    <img width={125} height={125} src={`/assets/major/${id}.png`} alt={id} />
+    <p class="text-white text-xl text-center">
+      {nameTH}
+      <br />
+      ({nameEN})
+    </p>
+  </div>
+</a>
