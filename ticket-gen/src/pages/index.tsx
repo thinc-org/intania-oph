@@ -4,10 +4,10 @@ import DescribeRoute from "@/components/common/DescribeRoute"
 
 export default function HomePage() {
   return (
-    <DescribeRoute title="Next.js boilerplate" description="by betich">
+    <DescribeRoute title="Ticket Generator Service" description="by betich">
       <main className="bg-red-50 p-6 text-zinc-900">
         <div className="flex min-h-screen flex-col gap-4">
-          <h1 className="text-xl font-bold sm:text-6xl">Next.js App</h1>
+          <h1 className="text-xl font-bold sm:text-6xl">Ticket Generator Service</h1>
           <p className="text-lg font-medium">
             Generated using{" "}
             <Link href="https://github.com/betich/next-boilerplate">
