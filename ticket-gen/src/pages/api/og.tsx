@@ -30,10 +30,16 @@ const majors = [
   "survey",
 ]
 
+const bgNames = ["bg1", "bg2", "bg3"]
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     const url = new URL(req.url ?? "")
     const name = url.searchParams.get("name") ?? "Name"
+    const bg =
+      url.searchParams.get("bg") && bgNames.includes(url?.searchParams?.get("bg") ?? "")
+        ? url.searchParams.get("bg")
+        : "bg1"
     const major =
       url.searchParams.get("major") && majors.includes(url?.searchParams?.get("major") ?? "")
         ? url.searchParams.get("major")
@@ -44,7 +50,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         <div tw="bg-[#F6F3EC] flex justify-center items-center relative w-full h-full" height={1920} width={1080}>
           <div style={{ fontFamily: "Roboto Slab" }} tw="flex flex-col text-center relative w-full h-full">
             <div tw="relative flex">
-              <img alt="bg" height={1920} width={1080} src={`${url.origin}/assets/bg/bg1.png`} />
+              <img alt="bg" height={1920} width={1080} src={`${url.origin}/assets/bg/${bg}.png`} />
             </div>
 
             <div
