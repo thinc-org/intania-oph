@@ -47,7 +47,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     return new ImageResponse(
       (
-        <div tw="bg-[#F6F3EC] flex justify-center items-center relative w-full h-full" height={1920} width={1080}>
+        <div tw="bg-[#F6F3EC] flex justify-center items-center relative w-full h-full">
           <div style={{ fontFamily: "Roboto Slab" }} tw="flex flex-col text-center relative w-full h-full">
             <div tw="relative flex">
               <img alt="bg" height={1920} width={1080} src={`${url.origin}/assets/bg/${bg}.png`} />
