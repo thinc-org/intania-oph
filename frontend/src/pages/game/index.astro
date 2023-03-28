@@ -1,0 +1,17 @@
+---
+import GameLogic from "../../components/game/GameLogic";
+import Layout from "../../layout/Layout.astro";
+---
+
+<Layout title="ค้นหาภาคที่ใช่ — Intania Open House 2023">
+  <main class="">
+    <section
+      class="relative bg-[url('/assets/wallpaper.png')] bg-cover min-h-screen h-full flex flex-col justify-center items-center gap-10"
+    >
+      <h1 class="text-white text-4xl font-body">
+        มาค้นหาภาคที่ใช่สำหรับคุณกัน !
+      </h1>
+      <GameLogic client:load />
+    </section>
+  </main>
+</Layout>
