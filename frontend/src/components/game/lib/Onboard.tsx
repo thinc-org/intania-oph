@@ -46,7 +46,9 @@ export default function Onboard({
           }
         }}
         disabled={isBlank}
-      />
+      >
+        มาเริ่มกันเลย
+      </NextButton>
     </Fragment>
   );
 }

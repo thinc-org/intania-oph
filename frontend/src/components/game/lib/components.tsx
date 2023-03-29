@@ -4,9 +4,11 @@ import type { ReactNode } from "react";
 export function NextButton({
   onClick,
   disabled,
+  children: text,
 }: {
   onClick: () => void;
   disabled?: boolean;
+  children: string;
 }) {
   return (
     <button
@@ -17,7 +19,7 @@ export function NextButton({
         "group flex items-center gap-6 rounded-full bg-space-normal py-3 px-12 text-white shadow-md transition-colors duration-500"
       )}
     >
-      <span className="text-xl">มาเริ่มกันเลย</span>
+      <span className="text-xl">{text}</span>
       <img
         src="/assets/icons/arrowrightwhite.svg"
         className={clsx(

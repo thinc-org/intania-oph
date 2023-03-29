@@ -1,40 +1,35 @@
 import type { Dispatch, SetStateAction } from "react";
 import { ChoiceButton, ChoiceContainer } from "./components";
-import { CustomResponse, Point, Question, Scene } from "./game";
+import type { Point, TiebreakQuestion } from "./game";
 
-export default function GameContainer({
+export default function TieBreakerContainer({
   name,
   scene,
   setPage,
   chosen,
   setChosen,
-  addScore,
 }: {
   name: string;
-  scene: { id: string; message: string; choices: Question[] };
+  scene: { id: string; message: string; choices: TiebreakQuestion[] };
   setPage: Dispatch<SetStateAction<string>>;
   chosen: Record<string, string>;
   setChosen: Dispatch<SetStateAction<Record<string, string>>>;
-  addScore: (point: Point) => void;
 }) {
   // const [chosenChoice]
 
   return (
     <div className="flex flex-col items-center gap-4">
       <p className="text-center text-2xl text-space-medium">
-        {scene.message
-          .replace("{{name}}", name)
-          .replace("{{response}}", CustomResponse[chosen["Game00"]])}
+        {scene.message.replace("{{name}}", name)}
       </p>
 
       <ChoiceContainer>
-        {scene.choices.map((choice: Question) => (
+        {scene.choices.map((choice: TiebreakQuestion) => (
           <ChoiceButton
             key={choice.message}
             onClick={() => {
               setChosen({ ...chosen, [scene.id]: choice.message });
               setPage(choice.goto);
-              addScore(choice.points);
             }}
           >
             {choice.message}
