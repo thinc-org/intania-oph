@@ -48,11 +48,8 @@ export default function GameLogic() {
   const [major, setMajor] = useState<Majors | null>(null);
 
   useEffect(() => {
-    console.log(page, score, isInter, major);
-
     if (page === "waiting") {
       const result = calculateScore(score, isInter);
-      console.log("R", result);
 
       if (result.startsWith("tie")) {
         // tiebreaker
@@ -64,8 +61,13 @@ export default function GameLogic() {
     }
 
     if (page.startsWith("RESULT_")) {
-      setMajor(page.replace("RESULT_", "") as Majors);
+      const majorName = page.replace("RESULT_", "") as Majors;
+      setMajor(majorName);
       setPage("preresult");
+
+      // set localStorage
+      localStorage.setItem("name", name);
+      localStorage.setItem("major", majorName);
     }
   }, [page]);
 
@@ -116,7 +118,9 @@ export default function GameLogic() {
           setPage={setPage}
         />
       )}
-      {page === "preresult" && <Preresult major={major as Majors} />}
+      {page === "preresult" && (
+        <Preresult name={name} major={major as Majors} />
+      )}
     </div>
   );
 }

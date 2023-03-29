@@ -15,3 +15,14 @@ import Layout from "../../layout/Layout.astro";
     </section>
   </main>
 </Layout>
+
+<script>
+  // read from localStorage
+  const name = localStorage.getItem("name");
+  const major = localStorage.getItem("major");
+
+  if (name && major) {
+    // redirect to game page
+    window.location.href = "/ticket";
+  }
+</script>
