@@ -42,7 +42,7 @@ export default function CountDown({ until = OpeningTime }: { until?: number }) {
   }, []);
 
   return (
-    <div className="relative z-50 flex flex-col items-center gap-8 py-3 font-display text-xl text-space-normal">
+    <div className="relative z-50 flex flex-col items-center gap-8 py-3 font-display text-xl text-space-normal md:items-start">
       <div className="flex gap-2 text-center text-xl sm:text-3xl">
         <div className="flex-col gap-2">
           <p className="rounded-xl rounded-bl-xl bg-gray-500 bg-opacity-25 px-6 py-6 text-white backdrop-blur-sm">
