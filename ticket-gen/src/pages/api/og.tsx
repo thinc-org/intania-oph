@@ -28,6 +28,7 @@ const majors = [
   "nano",
   "nt",
   "pt",
+  "mt",
   "sv",
 ]
 

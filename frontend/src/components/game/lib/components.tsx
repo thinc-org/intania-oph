@@ -42,7 +42,7 @@ export function ChoiceButton({
   return (
     <button
       onClick={() => onClick()}
-      className="jusitfy-center flex w-full items-center rounded-full border border-gray-500/50 bg-white py-3 px-4 text-center text-lg text-black transition-colors duration-500 hover:bg-space-normal/50"
+      className="jusitfy-center flex w-full items-center rounded-full border border-gray-500/50 bg-white py-3 px-4 text-left text-lg text-black transition-colors duration-500 hover:bg-space-normal/50"
     >
       {children}
     </button>

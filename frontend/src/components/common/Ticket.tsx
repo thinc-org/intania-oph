@@ -27,6 +27,21 @@ export default function Ticket({ bg }: { bg: string }) {
           </p>
         </div>
 
+        <div
+          style={{
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+          className="absolute top-[100px] z-50 flex sm:top-[245px]"
+        >
+          <p
+            className="rounded-full text-[10px] font-bold text-white sm:text-xl"
+            // className="font-bold text-white"
+          >
+            {name?.length <= 18 ? name : name?.slice(0, 18) + "..."}
+          </p>
+        </div>
+
         {/* major */}
         <div
           style={{

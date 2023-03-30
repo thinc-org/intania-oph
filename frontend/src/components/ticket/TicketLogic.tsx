@@ -124,6 +124,7 @@ export default function TicketLogic() {
     a.href = `https://oph-ticket-gen.vercel.app/api/og?name=${name}&major=${major}&bg=${bg}`;
 
     document.body.appendChild(a);
+    a.target = "_blank";
     a.click();
     a.remove();
   };
@@ -135,7 +136,7 @@ export default function TicketLogic() {
           คุณ{name} อาจจะเหมาะกับภาควิชา
           <br />
           <span className="text-4xl leading-none text-space-normal">
-            {AllMajors.find((currMajor) => currMajor.id === major)?.nameTH}(
+            {AllMajors.find((currMajor) => currMajor.id === major)?.nameTH} (
             {AllMajors.find((currMajor) => currMajor.id === major)?.nameEN})
           </span>
         </p>
@@ -173,7 +174,7 @@ export default function TicketLogic() {
             <span className="text-xl">ดาวน์โหลดรูป</span>
           </button>
 
-          {/* <button
+          <button
             onClick={() => {
               // swap between bg1, bg2 and bg3
               setBg((prev) => {
@@ -191,7 +192,7 @@ export default function TicketLogic() {
             }
           >
             <span className="text-xl">เปลี่ยนพื้นหลังรูป</span>
-          </button> */}
+          </button>
         </div>
       </div>
     </section>

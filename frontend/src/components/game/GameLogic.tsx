@@ -71,18 +71,6 @@ export default function GameLogic() {
     }
   }, [page]);
 
-  calculateScore(
-    {
-      cal: 1,
-      phys: 1,
-      chem: 0,
-      draw: 1,
-      com: 1,
-      mat: 2,
-    },
-    true
-  );
-
   return (
     <div className="flex min-h-[100px] w-full max-w-lg flex-col items-center justify-center gap-6 rounded-3xl bg-white py-8 px-6 font-body shadow-2xl">
       {page === "onboarding" && (

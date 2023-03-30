@@ -118,6 +118,8 @@ export function calculateScore(score: ScoreType, isInter: boolean): string {
     (group) => groupScores[group] === maxGroup
   );
 
+  console.log("E", groupScores);
+
   if (maxGroupMajors.length > 1) {
     return maxGroupMajors[Math.floor(Math.random() * maxGroupMajors.length)];
   } else {

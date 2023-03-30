@@ -49,14 +49,14 @@ export const Weight: Record<string, ScoreType> = {
     com: 0,
     mat: 2,
   },
-  geo: {
-    cal: 0,
-    phys: 2,
-    chem: 1,
-    draw: 0,
-    com: 0,
-    mat: 2,
-  },
+  // geo: {
+  //   cal: 0,
+  //   phys: 2,
+  //   chem: 1,
+  //   draw: 0,
+  //   com: 0,
+  //   mat: 2,
+  // },
   pt: {
     cal: 0,
     phys: 1,
@@ -70,7 +70,7 @@ export const Weight: Record<string, ScoreType> = {
     phys: 1,
     chem: 0,
     draw: 1,
-    com: 1.5,
+    com: 2,
     mat: 1.5,
   },
   env: {
@@ -91,10 +91,10 @@ export const Weight: Record<string, ScoreType> = {
   },
   cp: {
     cal: 2,
-    phys: 0,
-    chem: 0,
+    phys: 0.5,
+    chem: -1,
     draw: 0,
-    com: 3,
+    com: 4,
     mat: 0,
   },
   nt: {
