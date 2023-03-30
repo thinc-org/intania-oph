@@ -12,61 +12,67 @@ export const ThaiMajors: Major[] = [
   },
   //วิศวกรรมไฟฟ้า (Electrical Engineering)
   {
-    id: "electrical",
+    id: "elec",
     nameTH: "วิศวกรรมไฟฟ้า",
     nameEN: "Electrical Engineering",
   },
   // วิศวกรรมเครื่องกล (Mechanical Engineering)
   {
-    id: "mechanical",
+    id: "mech",
     nameTH: "วิศวกรรมเครื่องกล",
     nameEN: "Mechanical Engineering",
   },
   // วิศวกรรมยานยนต์ (Automative Engineering)
   {
-    id: "automotive",
+    id: "auto",
     nameTH: "วิศวกรรมยานยนต์",
     nameEN: "Automotive Engineering",
   },
   // วิศวกรรมอุตสาหการ (Industrial Engineering)
   {
-    id: "industrial",
+    id: "ie",
     nameTH: "วิศวกรรมอุตสาหการ",
     nameEN: "Industrial Engineering",
   },
   // วิศวกรรมสิ่งแวดล้อม (Environmental Engineering)
   {
-    id: "environmental",
+    id: "env",
     nameTH: "วิศวกรรมสิ่งแวดล้อม",
     nameEN: "Environmental Engineering",
   },
   // วิศวกรรมโลหการ (Metallurgical Engineering)
   {
-    id: "metallurgical",
+    id: "mt",
     nameTH: "วิศวกรรมโลหการ",
     nameEN: "Metallurgical Engineering",
   },
   // วิศวกรรมเหมืองแร่และปิโตรเลียม (Mining and Petroleum Engineering)
   {
-    id: "petroleum",
+    id: "pt",
     nameTH: "วิศวกรรมเหมืองแร่และปิโตรเลียม",
     nameEN: "Mining and Petroleum Engineering",
   },
+  // ภาควิชาวิศวกรรมนิวเคลียร์ (Nuclear Engineering)
+  {
+    id: "nuclear",
+    nameTH: "ภาควิชาวิศวกรรมนิวเคลียร์",
+    nameEN: "Nuclear Engineering",
+  },
   // วิศวกรรมสำรวจ (Survey Engineering)
   {
-    id: "survey",
+    id: "sv",
     nameTH: "วิศวกรรมสำรวจ",
     nameEN: "Survey Engineering",
   },
   // วิศวกรรมเคมี (Chemical Engineering)
   {
-    id: "chemical",
+    id: "che",
     nameTH: "วิศวกรรมเคมี",
     nameEN: "Chemical Engineering",
   },
   // วิศวกรรมคอมพิวเตอร์ (Computer Engineering)
   {
-    id: "computer",
+    id: "cp",
     nameTH: "วิศวกรรมคอมพิวเตอร์",
     nameEN: "Computer Engineering",
   },

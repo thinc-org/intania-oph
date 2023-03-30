@@ -135,7 +135,7 @@ export default function TicketLogic() {
           คุณ{name} อาจจะเหมาะกับภาควิชา
           <br />
           <span className="text-4xl leading-none text-space-normal">
-            {AllMajors.find((currMajor) => currMajor.id === major)?.nameTH}(
+            {AllMajors.find((currMajor) => currMajor.id === major)?.nameTH} (
             {AllMajors.find((currMajor) => currMajor.id === major)?.nameEN})
           </span>
         </p>
