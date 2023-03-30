@@ -128,7 +128,7 @@ export default function Ticket({ bg }: { bg: string }) {
           <img alt="bg" src={`/assets/ticket/${bg}.png`} />
         </div>
 
-        <div className="absolute top-1/4 left-1/2 z-50 flex -translate-y-1/4 -translate-x-1/2">
+        <div className="absolute top-1/4 left-1/2 z-50 mt-1 flex -translate-y-1/4 -translate-x-1/2 md:mt-2">
           <p
             className="rounded-full bg-[#F6F3EC] py-[5px] px-[20px] text-[10px] font-bold text-black shadow-md sm:py-3 sm:px-8 sm:text-xl"
             // className="font-bold text-white"
