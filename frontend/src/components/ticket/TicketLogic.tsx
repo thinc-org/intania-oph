@@ -173,7 +173,7 @@ export default function TicketLogic() {
             <span className="text-xl">ดาวน์โหลดรูป</span>
           </button>
 
-          <button
+          {/* <button
             onClick={() => {
               // swap between bg1, bg2 and bg3
               setBg((prev) => {
@@ -191,7 +191,7 @@ export default function TicketLogic() {
             }
           >
             <span className="text-xl">เปลี่ยนพื้นหลังรูป</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
