@@ -14,19 +14,19 @@ const { frontmatter } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{frontmatter.nameTH} - Intania Openhouse 20323</title>
   </head>
-  <body class="bg-space-dark text-space-normal font-body font-normal">
+  <body
+    class="bg-space-dark text-space-normal font-body min-h-screen flex flex-col"
+  >
     <NavBar />
 
     <main class="">
-      <section
-        class="relative bg-[url('/assets/hero.png')] bg-cover min-h-screen h-full bg-center pt-16 sm:px-6 sm:pt-24"
-      >
+      <section class="my-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <h1 class="text-4xl sm:text-5xl font-body mb-6">
           {frontmatter.nameTH} ({frontmatter.nameEN})
         </h1>
 
         <div
-          class="text-white text-lg prose-h1:text-2xl prose-headings:px-5 prose-headings:py-2 prose-headings:bg-white/30 prose-headings:backdrop-blur-sm rounded-full"
+          class="leading-relaxed text-white text-lg prose-ol:pl-4 prose-ol:list-decimal prose-ol:list-inside prose-strong:text-space-normal prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h1:py-4 prose-h2:pt-6 prose-h2:pb-2 prose-h3:pt-4 prose-h3:pb-2 prose-headings:text-space-normal prose-headings:backdrop-blur-sm rounded-full prose-ul:pl-4 prose-ul:list-disc prose-ul:list-inside"
         >
           <!--  -->
           <slot />

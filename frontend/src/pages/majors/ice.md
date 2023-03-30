@@ -5,17 +5,16 @@ nameEN: "ICE"
 ---
 
 
-# ภาควิชาวิศวกรรมสารสนเทศและการสื่อสาร (ICE)
 ## เรียนเกี่ยวกับอะไร
 จุดมุ่งหมายของภาค ICE คือผลิตบุคลากรที่มีความสามารถในด้าน Digital Technology เพื่อตอบสนองความต้องการของภาคอุตสาหกรรม นิสิตภาค ICE จะได้เรียนวิชาเกี่ยวกับวิศวกรรมคอมพิวเตอร์ ไฟฟ้า และอุตสาหการ เป็นหลัก
 
-ช่วงปี 1 : เรียนวิชาวิทยาศาสตร์ คณิตศาสตร์พื้นฐาน วิชาที่จําเป็นสําหรับภาควิศวกรรม เช่น แคลคูลัส ฟิสิกส์ เคมี การเขียนแบบทางวิศวกรรม วัสดุทางวิศวกรรม การเขียนโปรแกรม
+**ช่วงปี 1** เรียนวิชาวิทยาศาสตร์ คณิตศาสตร์พื้นฐาน วิชาที่จําเป็นสําหรับภาควิศวกรรม เช่น แคลคูลัส ฟิสิกส์ เคมี การเขียนแบบทางวิศวกรรม วัสดุทางวิศวกรรม การเขียนโปรแกรม
 
-ช่วงปี 2 : เรียนในสิ่งที่เกี่ยวข้องกับสารสนเทศและการสื่อสารมากขึ้น เนื้อหาเป็นภาคทฤษฎีมากกว่าภาคปฏิบัติ ส่วนองค์ความรู้ทางคอมพิวเตอร์นิสิตจะได้เรียนวิยุตคณิต โครงสร้างข้อมูลและสถาปัตยกรรมทางคอมพิวเตอร์ เช่น Discrete Mathematics, Data Structure&Algorithmในส่วนความรู้ทางไฟฟ้าจะได้เรียนวงจรไฟฟ้าเบื้องต้น เช่น Electrical Mathematical MethodProbability/Statistics, Basic Circuitry and Electronics และ Signals and Linear System ในส่วนของอุตสาหการจะได้เรียนเนื้อหาการจัดการ เช่น Technology Management
+**ช่วงปี 2** เรียนในสิ่งที่เกี่ยวข้องกับสารสนเทศและการสื่อสารมากขึ้น เนื้อหาเป็นภาคทฤษฎีมากกว่าภาคปฏิบัติ ส่วนองค์ความรู้ทางคอมพิวเตอร์นิสิตจะได้เรียนวิยุตคณิต โครงสร้างข้อมูลและสถาปัตยกรรมทางคอมพิวเตอร์ เช่น Discrete Mathematics, Data Structure&Algorithmในส่วนความรู้ทางไฟฟ้าจะได้เรียนวงจรไฟฟ้าเบื้องต้น เช่น Electrical Mathematical MethodProbability/Statistics, Basic Circuitry and Electronics และ Signals and Linear System ในส่วนของอุตสาหการจะได้เรียนเนื้อหาการจัดการ เช่น Technology Management
 
-ช่วงปี 3 : จะได้เรียนด้าน application และ เน้นด้านปฏิบัติมากขึ้น ด้านคอมพิวเตอร์จะได้เรียนเกี่ยวกับซอฟต์แวร์คอมพิวเตอร์ฐานข้อมูล เช่น Networking, Software Engineering, Databases และ Information System ด้านไฟฟ้าเน้นไปทางระบบการสื่อสารพื้นฐานของ Digital Communication, Basic Telecommunication 4G/5G และในส่วนของอุตสาหการจะเรียน Basic Economics, Finance, Operation Management
+**ช่วงปี 3** จะได้เรียนด้าน application และ เน้นด้านปฏิบัติมากขึ้น ด้านคอมพิวเตอร์จะได้เรียนเกี่ยวกับซอฟต์แวร์คอมพิวเตอร์ฐานข้อมูล เช่น Networking, Software Engineering, Databases และ Information System ด้านไฟฟ้าเน้นไปทางระบบการสื่อสารพื้นฐานของ Digital Communication, Basic Telecommunication 4G/5G และในส่วนของอุตสาหการจะเรียน Basic Economics, Finance, Operation Management
 
-ช่วงปี 4 : ในปี 4 จะได้เลือกวิชาเลือกไปในทางที่สนใจได้มากยิ่งขึ้น จะหนักไปที่การสร้างผลงานและทํา project เป็นการประยุกต์ใช้ความรู้จาก 3 ปีที่ผ่านมา มาสร้างสรรค์ผลงาน โดยวิชาเลือกในด้านคอมพิวเตอร์มีความหลากหลายมาก เช่น Data Science, Artificial Intelligence, User Interface Design, Computer Security และ Game Programming, High Technology Entrepreneurship ในทางไฟฟ้า เช่น Wireless Communication, Teletraffic Engineering และ Optic Fibers และในทางอุตสาหการ เช่น Supply Chain Management, Optimization
+**ช่วงปี 4** ในปี 4 จะได้เลือกวิชาเลือกไปในทางที่สนใจได้มากยิ่งขึ้น จะหนักไปที่การสร้างผลงานและทํา project เป็นการประยุกต์ใช้ความรู้จาก 3 ปีที่ผ่านมา มาสร้างสรรค์ผลงาน โดยวิชาเลือกในด้านคอมพิวเตอร์มีความหลากหลายมาก เช่น Data Science, Artificial Intelligence, User Interface Design, Computer Security และ Game Programming, High Technology Entrepreneurship ในทางไฟฟ้า เช่น Wireless Communication, Teletraffic Engineering และ Optic Fibers และในทางอุตสาหการ เช่น Supply Chain Management, Optimization
 
 
 ## รู้ได้ยังไงว่าตัวเองเหมาะกับภาคนี้
@@ -27,5 +26,6 @@ nameEN: "ICE"
 ## เรียนจบแล้วทํางานแนวไหนได้บ้าง
 หลังจากที่สําเร็จการศึกษา นิสิตสามารถทํางานเป็น นักพัฒนาโปรแกรม นักดูแลระบบ นักวิเคราะห์และออกแบบระบบ นักวิทยาศาสตร์ข้อมูล ที่ปรึกษาทางเทคโนโลยี และอื่น ๆ ที่เกี่ยวกับคอมพิวเตอร์อีกมากมาย
 
+<br>
 
     “เราเป็นเป็ดครับ เป็ดที่ว่ายนํ้าไม่เก่งเท่าปลาและบินไม่เก่งเท่านก แต่เราว่ายนํ้าได้และบินได้”

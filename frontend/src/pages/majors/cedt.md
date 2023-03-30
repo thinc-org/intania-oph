@@ -1,11 +1,10 @@
 ---
 layout: "../../layout/MajorBlogLayout.astro"
-nameTH: "ภาควิชาวิศวกรรมคอมพิวเตอร์ และดิจิตอล"
-nameEN: "CEDT"
+nameTH: "วิศวกรรมคอมพิวเตอร์และเทคโนโลยีดิจิทัล"
+nameEN: "Computer Engineering & Digital Technology"
 ---
 
 
-# ภาควิชาวิศวกรรมคอมพิวเตอร์ หลักสูตรใหม่ (CEDT)
 ## เนื้อหาการเรียนในแต่ละชั้นปี
 **ปี 1** จะเรียนพื้นฐานด้านวิศวกรรมคอมพิวเตอร์ เช่น Basic Programing, Data Structure, ตรรกศาสตร์ของดิจิตอลคอมพิวเตอร์, Software Engineering เป็นต้น เมื่อจบปี 1 นิสิตจะสามารถประกอบอาชีพในตำแหน่ง Full-Stack Developer (นักพัฒนาที่สามารถพัฒนาได้ทั้งระบบ) เป็นต้น
 

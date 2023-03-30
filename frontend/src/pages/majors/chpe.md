@@ -1,11 +1,10 @@
 ---
 layout: "../../layout/MajorBlogLayout.astro"
 nameTH: "Chemical and Process Engineering"
-nameEN: "Chemical and Process Engineering"
+nameEN: "ChPE"
 ---
 
 
-# Chemical and Process Engineering
 ## ChPE คืออะไร 
 ChPE หรือ Chemical and Process Engineering โปรแกรมอินเตอร์ใหม่ล่าสุดของวิศวะอินเตอร์ จุฬาฯ  เป็นหลักสูตรที่มุ่งเน้นการสร้างนิสิตให้เป็นวิศวกรเคมีที่มีความรู้ความสามารถที่ทันสมัยเพื่อตอบรับความต้องการของสังคมโลก ซึ่งจะแบ่งออกเป็น 2 แขนง อันได้แก่ 
 1. Bioprocess Engineering นิสิตจะได้เรียนเกี่ยวกับกระบวนการทางชีวภาพ รู้จักนำของเหลือจากธรรมชาติมาสร้างสรรค์สิ่งใหม่ มองเห็นความสำคัญของสิ่งแวดล้อม
