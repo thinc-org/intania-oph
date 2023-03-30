@@ -23,7 +23,7 @@ export type Majors =
   | "ie"
   | "che"
   | "geo"
-  | "pe"
+  | "pt"
   | "sv"
   | "env"
   | "mt"

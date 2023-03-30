@@ -17,8 +17,6 @@ export default function GameContainer({
   setChosen: Dispatch<SetStateAction<Record<string, string>>>;
   addScore: (point: Point) => void;
 }) {
-  // const [chosenChoice]
-
   return (
     <div className="flex flex-col items-center gap-4">
       <p className="text-center text-2xl text-space-medium">
@@ -32,6 +30,7 @@ export default function GameContainer({
           <ChoiceButton
             key={choice.message}
             onClick={() => {
+              console.log("choice", choice);
               setChosen({ ...chosen, [scene.id]: choice.message });
               setPage(choice.goto);
               addScore(choice.points);

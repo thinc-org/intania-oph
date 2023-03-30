@@ -57,7 +57,7 @@ export const Weight: Record<string, ScoreType> = {
     com: 0,
     mat: 2,
   },
-  pe: {
+  pt: {
     cal: 0,
     phys: 1,
     chem: 2,
@@ -159,8 +159,8 @@ export const GroupingTH: Record<string, string[]> = {
   elec: ["elec"],
   tie01: ["mech", "auto"],
   ie: ["ie"],
-  tie02: ["che", "pe", "env", "nt"],
-  tie03: ["civil", "geo", "mt"],
+  tie02: ["che", "pt", "env", "nt"],
+  tie03: ["civil", "mt"],
   tie04: ["sv", "cp"],
 };
 
