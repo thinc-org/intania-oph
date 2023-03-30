@@ -42,10 +42,10 @@ export default function CountDown({ until = OpeningTime }: { until?: number }) {
   }, []);
 
   return (
-    <div className="relative z-50 flex flex-col gap-8 py-3 font-display text-xl text-space-normal">
-      <div className="flex gap-2 text-center text-xl sm:space-x-6 sm:text-3xl">
+    <div className="relative z-50 flex flex-col items-center gap-8 py-3 font-display text-xl text-space-normal">
+      <div className="flex gap-2 text-center text-xl sm:text-3xl">
         <div className="flex-col gap-2">
-          <p className="rounded-tl-xl rounded-bl-xl bg-gray-500 bg-opacity-25 px-6 py-6 text-white backdrop-blur-sm">
+          <p className="rounded-xl rounded-bl-xl bg-gray-500 bg-opacity-25 px-6 py-6 text-white backdrop-blur-sm">
             {timeLeft?.days ?? 0}
           </p>
           <p className="mt-2 text-sm">
@@ -53,19 +53,19 @@ export default function CountDown({ until = OpeningTime }: { until?: number }) {
           </p>
         </div>
         <div className="flex-col gap-2">
-          <p className="bg-gray-500 bg-opacity-25 px-4 py-6 text-white backdrop-blur-sm">
+          <p className="rounded-xl bg-gray-500 bg-opacity-25 px-4 py-6 text-white backdrop-blur-sm">
             {String(timeLeft?.hours ?? 0).padStart(2, "0)")}
           </p>
           <p className="mt-2 text-sm">hours</p>
         </div>
         <div className="flex-col gap-2">
-          <p className="bg-gray-500 bg-opacity-25 px-4 py-6 text-white backdrop-blur-sm">
+          <p className="rounded-xl bg-gray-500 bg-opacity-25 px-4 py-6 text-white backdrop-blur-sm">
             {String(timeLeft?.minutes ?? 0).padStart(2, "0")}
           </p>
           <p className="mt-2 text-sm">minutes</p>
         </div>
         <div className="flex-col gap-2">
-          <p className="rounded-tr-xl rounded-br-xl bg-gray-500 bg-opacity-25 px-4 py-6 text-white backdrop-blur-sm">
+          <p className="rounded-xl rounded-br-xl bg-gray-500 bg-opacity-25 px-4 py-6 text-white backdrop-blur-sm">
             {String(timeLeft?.seconds ?? 0).padStart(2, "0")}
           </p>
           <p className="mt-2 text-sm">seconds</p>
