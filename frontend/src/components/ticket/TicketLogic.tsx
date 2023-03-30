@@ -49,6 +49,12 @@ const AllMajors = [
     nameTH: "วิศวกรรมเหมืองแร่และปิโตรเลียม",
     nameEN: "Mining and Petroleum Engineering",
   },
+  // ภาควิชาวิศวกรรมนิวเคลียร์ (Nuclear Engineering)
+  {
+    id: "nt",
+    nameTH: "ภาควิชาวิศวกรรมนิวเคลียร์",
+    nameEN: "Nuclear Engineering",
+  },
   // วิศวกรรมสำรวจ (Survey Engineering)
   {
     id: "sv",

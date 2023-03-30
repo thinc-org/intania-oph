@@ -54,7 +54,7 @@ export const ThaiMajors: Major[] = [
   },
   // ภาควิชาวิศวกรรมนิวเคลียร์ (Nuclear Engineering)
   {
-    id: "nuclear",
+    id: "nt",
     nameTH: "ภาควิชาวิศวกรรมนิวเคลียร์",
     nameEN: "Nuclear Engineering",
   },
