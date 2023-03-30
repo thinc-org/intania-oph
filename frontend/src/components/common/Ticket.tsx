@@ -14,14 +14,13 @@ export default function Ticket({ bg }: { bg: string }) {
 
         <div
           style={{
-            top: 195,
             left: "50%",
             transform: "translateX(-50%)",
           }}
-          className="absolute z-50 flex"
+          className="absolute top-[100px] z-50 flex sm:top-[195px]"
         >
           <p
-            className="rounded-full bg-[#F6F3EC] py-3 px-8 text-xl font-bold text-black shadow-md"
+            className="rounded-full bg-[#F6F3EC] py-[5px] px-[20px] text-[10px] font-bold text-black shadow-md sm:py-3 sm:px-8 sm:text-xl"
             // className="font-bold text-white"
           >
             {name?.length <= 18 ? name : name?.slice(0, 18) + "..."}
@@ -31,11 +30,10 @@ export default function Ticket({ bg }: { bg: string }) {
         {/* major */}
         <div
           style={{
-            top: 325,
             left: "50%",
             transform: "translateX(-50%)",
           }}
-          className="absolute z-50 flex"
+          className="absolute top-[155px] z-50 flex sm:top-[325px]"
         >
           <img width={175} height={175} src={`/assets/major/${major}.png`} />
         </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Ticket from "../common/Ticket";
 
 const AllMajors = [
   {
@@ -118,16 +119,19 @@ export default function TicketLogic() {
   const [bg, setBg] = useState(BG[0]);
 
   const download = () => {
-    const link = document.createElement("a");
-    link.download = "ticket.png";
-    link.href = `https://oph-ticket-gen.vercel.app/api/og?name=${name}&major=${major}&bg=${bg}`;
-    link.click();
+    const a = document.createElement("a");
+    a.download = "ticket.png";
+    a.href = `https://oph-ticket-gen.vercel.app/api/og?name=${name}&major=${major}&bg=${bg}`;
+
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   };
 
   return (
     <section className="relative h-full min-h-screen bg-[url('/assets/hero.png')] bg-cover bg-center">
       <div className="flex h-full flex-col justify-center gap-8 px-20 py-32 sm:py-20">
-        <p className="text-center font-body text-xl text-white sm:text-5xl">
+        <p className="text-center font-body text-xl text-white sm:text-3xl">
           คุณ{name} อาจจะเหมาะกับภาควิชา
           <br />
           <span className="text-4xl leading-none text-space-normal">
@@ -136,15 +140,15 @@ export default function TicketLogic() {
           </span>
         </p>
 
-        {bg}
+        <Ticket bg={bg} />
 
-        <img
+        {/* <img
           src={`https://oph-ticket-gen.vercel.app/api/og?name=${name}&major=${major}&bg=${bg}`}
           alt="ticket"
           height={200}
           width={200}
           className="mx-auto"
-        />
+        /> */}
 
         <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
           <button
@@ -169,7 +173,7 @@ export default function TicketLogic() {
             <span className="text-xl">ดาวน์โหลดรูป</span>
           </button>
 
-          {/* <button
+          <button
             onClick={() => {
               // swap between bg1, bg2 and bg3
               setBg((prev) => {
@@ -187,7 +191,7 @@ export default function TicketLogic() {
             }
           >
             <span className="text-xl">เปลี่ยนพื้นหลังรูป</span>
-          </button> */}
+          </button>
         </div>
       </div>
     </section>
