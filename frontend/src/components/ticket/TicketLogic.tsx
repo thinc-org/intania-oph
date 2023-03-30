@@ -136,9 +136,9 @@ export default function TicketLogic() {
   };
 
   return (
-    <section className="relative h-full min-h-screen bg-[url('/assets/hero.png')] bg-cover bg-center">
-      <div className="flex h-full flex-col justify-center gap-8 px-20 py-32 sm:py-20">
-        <p className="text-center font-body text-xl text-white sm:text-3xl">
+    <section className="relative h-full min-h-screen bg-[url('/assets/wallpaper.png')] bg-cover bg-center">
+      <div className="flex h-full flex-col justify-center gap-8 px-4 py-32 sm:px-20 sm:py-20">
+        <p className="mx-auto w-full text-center font-body text-xl text-white sm:max-w-sm sm:text-3xl">
           คุณ{name} อาจจะเหมาะกับภาควิชา
           <br />
           <span className="text-4xl leading-none text-space-normal">
@@ -146,6 +146,22 @@ export default function TicketLogic() {
             {AllMajors.find((currMajor) => currMajor.id === major)?.nameEN})
           </span>
         </p>
+
+        <div className="flex justify-center">
+          <a
+            href={`/major/${
+              AllMajors.find((currMajor) => currMajor.id === major)?.id
+            }`}
+            className="group flex items-center gap-2 rounded-full bg-white py-3 px-4 text-space-medium shadow-md transition-colors duration-500 hover:bg-slate-200"
+          >
+            <span className="text-3xl">ดูข้อมูลของภาควิชา</span>
+            <img
+              src="/assets/icons/arrowright.svg"
+              class="transition-transform duration-500 group-hover:translate-x-4"
+              alt="arrow right"
+            />
+          </a>
+        </div>
 
         <Ticket bg={bg} />
 
