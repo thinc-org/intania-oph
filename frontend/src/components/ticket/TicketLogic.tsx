@@ -49,6 +49,12 @@ const AllMajors = [
     nameTH: "วิศวกรรมเหมืองแร่และปิโตรเลียม",
     nameEN: "Mining and Petroleum Engineering",
   },
+  // ภาควิชาวิศวกรรมนิวเคลียร์ (Nuclear Engineering)
+  {
+    id: "nt",
+    nameTH: "ภาควิชาวิศวกรรมนิวเคลียร์",
+    nameEN: "Nuclear Engineering",
+  },
   // วิศวกรรมสำรวจ (Survey Engineering)
   {
     id: "sv",
@@ -173,7 +179,7 @@ export default function TicketLogic() {
             <span className="text-xl">ดาวน์โหลดรูป</span>
           </button>
 
-          {/* <button
+          <button
             onClick={() => {
               // swap between bg1, bg2 and bg3
               setBg((prev) => {
@@ -191,7 +197,7 @@ export default function TicketLogic() {
             }
           >
             <span className="text-xl">เปลี่ยนพื้นหลังรูป</span>
-          </button> */}
+          </button>
         </div>
       </div>
     </section>
