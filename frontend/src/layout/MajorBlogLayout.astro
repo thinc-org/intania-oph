@@ -1,0 +1,163 @@
+---
+import Footer from "../components/common/Footer.astro";
+import NavBar from "../components/common/NavBar.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.nameTH} - Intania Openhouse 20323</title>
+  </head>
+  <body class="bg-space-dark text-space-normal font-body font-normal">
+    <NavBar />
+
+    <main class="">
+      <section
+        class="relative bg-[url('/assets/hero.png')] bg-cover min-h-screen h-full bg-center pt-16 sm:px-6 sm:pt-24"
+      >
+        <h1 class="text-4xl sm:text-5xl font-body mb-6">
+          {frontmatter.nameTH} ({frontmatter.nameEN})
+        </h1>
+
+        <div
+          class="text-white text-lg prose-h1:text-2xl prose-headings:px-5 prose-headings:py-2 prose-headings:bg-white/30 prose-headings:backdrop-blur-sm rounded-full"
+        >
+          <!--  -->
+          <slot />
+          <!--  -->
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  @font-face {
+    font-family: "Noto Sans Thai";
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("../fonts/Noto-Sans-Thai.var.woff2") format("woff2");
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC, U+0000-00FF, U+0131,
+      U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+      U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: "FC Friday";
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("../fonts/FC Friday Medium.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "FC Friday";
+    font-style: italic;
+    font-weight: 500;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("../fonts/FC Friday Medium Italic.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("../fonts/MonumentExtended-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("../fonts/MonumentExtended-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("../fonts/MonumentExtended-Ultrabold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Roboto Slab";
+    font-style: bold;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
+  }
+
+  .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #be9cd7;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+</style>
