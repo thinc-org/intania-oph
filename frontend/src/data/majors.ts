@@ -24,13 +24,13 @@ export const ThaiMajors: Major[] = [
   },
   // วิศวกรรมยานยนต์ (Automative Engineering)
   {
-    id: "automative",
+    id: "automotive",
     nameTH: "วิศวกรรมยานยนต์",
-    nameEN: "Automative Engineering",
+    nameEN: "Automotive Engineering",
   },
   // วิศวกรรมอุตสาหการ (Industrial Engineering)
   {
-    id: "ie",
+    id: "industrial",
     nameTH: "วิศวกรรมอุตสาหการ",
     nameEN: "Industrial Engineering",
   },
@@ -42,13 +42,13 @@ export const ThaiMajors: Major[] = [
   },
   // วิศวกรรมโลหการ (Metallurgical Engineering)
   {
-    id: "metal",
+    id: "metallurgical",
     nameTH: "วิศวกรรมโลหการ",
     nameEN: "Metallurgical Engineering",
   },
   // วิศวกรรมเหมืองแร่และปิโตรเลียม (Mining and Petroleum Engineering)
   {
-    id: "mining",
+    id: "petroleum",
     nameTH: "วิศวกรรมเหมืองแร่และปิโตรเลียม",
     nameEN: "Mining and Petroleum Engineering",
   },
@@ -72,7 +72,7 @@ export const ThaiMajors: Major[] = [
   },
   // วิศวกรรมคอมพิวเตอร์และเทคโนโลยีดิจิทัล (CEDT)
   {
-    id: "comp-cedt",
+    id: "cedt",
     nameTH: "วิศวกรรมคอมพิวเตอร์และเทคโนโลยีดิจิทัล",
     nameEN: "Computer and Digital Technology Engineering",
   },
