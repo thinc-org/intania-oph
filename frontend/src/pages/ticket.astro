@@ -1,43 +1,18 @@
 ---
-import Ticket from "../components/common/Ticket";
+import TicketLogic from "../components/ticket/TicketLogic";
 import Layout from "../layout/Layout.astro";
-let bg = "bg1";
 ---
 
 <Layout title="ตั๋วของคุณ — Intania Open House 2023">
   <main class="">
-    <section
-      class="relative bg-[url('/assets/hero.png')] bg-cover min-h-screen h-full"
-    >
-      <div
-        class="flex flex-col h-full justify-center gap-8 px-20 py-6 sm:py-20"
-      >
-        <p class="text-4xl sm:text-5xl text-white text-center font-body">
-          มาค้นหาภาคที่ใช่สำหรับคุณกัน !
-        </p>
-
-        <Ticket bg={bg} client:load />
-
-        <div class="flex w-full justify-center">
-          <button
-            onclick="localStorage.removeItem('major');localStorage.removeItem('name');window.location.href = '/game';"
-            class={"group flex items-center gap-6 rounded-full bg-space-normal py-3 px-16 text-white shadow-md transition-colors duration-500 hover:bg-space-normal/50"}
-          >
-            <span class="text-xl">เล่นเกมอีกรอบ</span>
-          </button>
-        </div>
-      </div>
-    </section>
+    <TicketLogic client:load />
   </main>
 </Layout>
 
 <script>
-  // read from localStorage
   const name = localStorage.getItem("name");
   const major = localStorage.getItem("major");
-
   if (!name || !major) {
-    // redirect to game page
     window.location.href = "/game";
   }
 </script>
