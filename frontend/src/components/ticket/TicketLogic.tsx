@@ -149,7 +149,7 @@ export default function TicketLogic() {
 
         <div className="flex justify-center">
           <a
-            href={`/major/${
+            href={`/majors/${
               AllMajors.find((currMajor) => currMajor.id === major)?.id
             }`}
             className="group flex items-center gap-2 rounded-full bg-white py-3 px-4 text-space-medium shadow-md transition-colors duration-500 hover:bg-slate-200"
@@ -157,7 +157,7 @@ export default function TicketLogic() {
             <span className="text-3xl">ดูข้อมูลของภาควิชา</span>
             <img
               src="/assets/icons/arrowright.svg"
-              class="transition-transform duration-500 group-hover:translate-x-4"
+              className="transition-transform duration-500 group-hover:translate-x-4"
               alt="arrow right"
             />
           </a>

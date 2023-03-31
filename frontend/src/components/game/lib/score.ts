@@ -119,10 +119,13 @@ export function calculateScore(score: ScoreType, isInter: boolean): string {
   );
 
   console.log("E", groupScores);
+  console.log("F", maxGroupMajors);
 
   if (maxGroupMajors.length > 1) {
     return maxGroupMajors[Math.floor(Math.random() * maxGroupMajors.length)];
-  } else {
+  } else if (maxGroupMajors.length === 1) {
     return maxGroupMajors[0];
+  } else {
+    return "tie02";
   }
 }

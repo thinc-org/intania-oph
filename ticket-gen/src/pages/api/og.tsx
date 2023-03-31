@@ -28,6 +28,7 @@ const majors = [
   "sv",
   "nano",
   "nt",
+  "pt",
   "mt",
   "sv",
 ]
@@ -124,6 +125,11 @@ const AllMajors = [
     nameTH: "วิศวกรรมนาโน",
     nameEN: "NANO",
   },
+  {
+    id: "nt",
+    nameTH: "วิศวกรรมนิวเคลียร์",
+    nameEN: "Nuclear Engineering",
+  },
   // วิศวกรรมการออกแบบและการผลิตยานยนต์ (ADME)
   {
     id: "adme",
@@ -202,7 +208,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           <div
             style={{
               zIndex: "50",
-              bottom: "21%",
+              bottom: "20%",
               left: "50%",
               transform: "translateX(-50%)",
             }}

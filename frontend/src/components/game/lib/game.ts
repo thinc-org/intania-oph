@@ -84,7 +84,7 @@ export const GameScene: Scene = {
       {
         message: "ได้เลย !",
         points: { ...BaseScore },
-        goto: "Game02",
+        goto: "Game01",
       },
     ],
   },
@@ -374,6 +374,7 @@ export const TieBreaker: TiebreakScene = {
         message: "สนใจการออกแบบของรถมากกว่านะ",
         goto: "RESULT_adme",
       },
+
       {
         message: "ไม่สนใจเลย ไปดูอย่างอื่นแทนได้ไหม",
         goto: "tiealt2-10",
@@ -389,7 +390,7 @@ export const TieBreaker: TiebreakScene = {
         goto: "RESULT_adme",
       },
       {
-        message: "ไม่ไปดีกว่า สนใจเครื่องยนต์รถมากกว่า",
+        message: "ไม่ไปดีกว่า สนใจเครื่องบินมากกว่า",
         goto: "RESULT_aero",
       },
     ],
