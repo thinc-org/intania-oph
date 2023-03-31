@@ -181,7 +181,7 @@ export default function TicketLogic() {
               window.location.href = "/game";
             }}
             className={
-              "group flex items-center gap-6 rounded-full bg-space-normal py-3 px-16 text-white shadow-md transition-colors duration-500 hover:bg-space-normal/50"
+              "group flex items-center justify-center gap-6 rounded-full bg-space-normal py-3 px-16 text-white shadow-md transition-colors duration-500 hover:bg-space-normal/50"
             }
           >
             <span className="text-xl">เล่นเกมอีกรอบ</span>
@@ -190,7 +190,7 @@ export default function TicketLogic() {
           <button
             onClick={() => download()}
             className={
-              "group flex items-center gap-6 rounded-full bg-space-normal py-3 px-16 text-white shadow-md transition-colors duration-500 hover:bg-space-normal/50"
+              "group flex items-center justify-center gap-6 rounded-full bg-space-normal py-3 px-16 text-white shadow-md transition-colors duration-500 hover:bg-space-normal/50"
             }
           >
             <span className="text-xl">ดาวน์โหลดรูป</span>
@@ -210,7 +210,7 @@ export default function TicketLogic() {
               });
             }}
             className={
-              "group flex items-center gap-6 rounded-full bg-space-normal py-3 px-16 text-white shadow-md transition-colors duration-500 hover:bg-space-normal/50"
+              "group flex items-center justify-center gap-6 rounded-full bg-space-normal py-3 px-16 text-white shadow-md transition-colors duration-500 hover:bg-space-normal/50"
             }
           >
             <span className="text-xl">เปลี่ยนพื้นหลังรูป</span>
